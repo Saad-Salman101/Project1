@@ -4,7 +4,7 @@ import React from 'react'
 const Page13 = () => {
   return (
     <>
-    <div className='h-screen w-full flex-col  '>
+    <div id='page13' className='h-screen w-full flex-col  '>
       <div className='w-full h-[30%]'></div>
       <div className='w-full h-[20%] flex justify-center '><img src='/images/P13Logo.png' alt='' /></div>
       <div className='w-full h-[50%] flex flex-col justify-between items-center '>

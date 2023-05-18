@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
+import Link from 'next/link';
 
 const Page3 = () => {
   return (
     <>
-    <div className='h-screen w-full flex flex-col justify-between'>
+    <div id="page3" className='h-screen w-full flex flex-col justify-between'>
       
-      <div className='w-full h-[20%] flex justify-center items-center'>
+      <div className='w-full h-[15%] flex justify-center items-center'>
         <div className='text-black tracking-[2px] text-[30px] uppercase font-lato '>Revolutionary</div>
       </div>
       
@@ -17,8 +18,13 @@ const Page3 = () => {
         <div></div>
         </div>
         
-        <div className='flex justify-center items-start h-[20%]'>
-        <div  className='text-black tracking-[2px] text-[30px] font-lato '>The only platform of it`s kind in the world</div>
+        <div className='flex flex-col justify-center items-center h-[25%]'>
+        <div  className='text-black tracking-[2px] text-[30px] font-lato mb-10'>The only platform of it`s kind in the world</div>
+        <Link href='#page4' >
+            <a>
+              <img src='/images/DownArrow.png' alt='' />
+            </a>
+          </Link>
         </div>
 
     </div>

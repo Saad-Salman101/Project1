@@ -1,15 +1,29 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
+import Link from 'next/link'
 
 const Page4 = () => {
   return (
     <>
- <div className='realtive h-[100vh] w-screen flex-col justify-center items-center bg-black z-[-10] overflow-hidden'>
-        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}> 
-            <div ><img src='/images/P4Background.png' alt='' className='absolute bottom-[5px] z-[0] '/> </div>
-        <div className='absolute bottom-1/2 left-[100px] bg-black opacity-10 backdrop-blur-lg'><img src='/images/P4Zimo.png' alt=' '/></div>
-        </div>
-    </div> 
+<div id="page4" className='h-screen flex flex-col  justify-between items-center bg-[url("/images/b5.png")] bg-contain bg-center bg-no-repeat bg-black'>
+
+<div className='h-[35%] w-full'>
+  
+</div>
+<div className='h-[30%] w-full'>
+  
+</div>
+<div className='h-[35%] w-full flex flex-col justify-end items-center'>
+<Link href='#page5'  >
+            <a>
+              <img src='/images/DownArrow.png' alt='' />
+            </a>
+          </Link>
+</div>
+
+
+</div>
+
 
       
     </>
