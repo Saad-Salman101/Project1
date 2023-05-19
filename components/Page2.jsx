@@ -11,13 +11,15 @@ const Page2 = () => {
         <div className='md:w-[20%] w-[15%] h-full  flex items-center'><img src='/images/P2Logo.png' alt='' className='ml-4'  /></div>
         <div className='md:w-[50%] w-[70%] h-full flex-col flex justify-between items-center'>
           <div></div>
-          <img src='/images/P2Description.png' alt='' />         
-         <Link href='#page3'>
+          <img src='/images/P2Description.png' alt='' className='md:ml-0 ml-10' />         
+         <Link href='#page3'  className="filter-invert">
             <a>
-              <img src='/images/DownArrow.png' alt='' />
+              <img src="/images/DownArrow.png" alt="Image" className="filter-invert" />
+
             </a>
-          </Link></div>
-         <div className='md:w-[20%] w-[5%] '>asasc</div>
+          </Link>
+          </div>
+         <div className='md:w-[20%] w-[5%] '></div>
          </div>
          
       </div>

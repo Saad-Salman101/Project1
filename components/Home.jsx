@@ -12,6 +12,8 @@ import Page10 from './Page10'
 import Page11 from './Page11'
 import Page13 from './Page13'
 import Page12 from './Page12'
+// import Footer from './Footer'
+import Footer2 from './Footer2'
 
 const Home = () => {
   return (
@@ -29,7 +31,7 @@ const Home = () => {
     <Page11/>
     <Page12/>
     <Page13/>
-    
+    <Footer2/>
     
     </>
   )

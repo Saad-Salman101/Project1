@@ -11,7 +11,7 @@ const Page6 = () => {
         Cars
         <div>
         <a href='#page7'>
-              <img src='/images/DownArrow.png' alt='' />
+        <img src="/images/DownArrow.png" alt="Image" className="filter-invert  " />
             </a>
         </div>
         </div>

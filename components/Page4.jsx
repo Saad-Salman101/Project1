@@ -16,7 +16,7 @@ const Page4 = () => {
         <div className='h-[35%] w-full flex flex-col justify-end items-center'>
           <Link href='#page5'  >
             <a>
-              <img src='/images/DownArrow.png' alt='' />
+            <img src="/images/DownArrow.png" alt="Image" className="filter-invert" />
             </a>
           </Link>
         </div>

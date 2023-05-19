@@ -7,7 +7,7 @@ const Page8 = () => {
       <div className='text-white flex flex-col justify-between text-[40px] font-lato tracking-[2px] uppercase h-[100vh] '>
         <div className='h-[35%] w-full '></div>
         <div className='h-[30%] flex justify-center items-center'>watches</div>
-        <div className='h-[35%] flex justify-center items-end '> <a href='#page9'><img src='/images/DownArrow.png' alt='' />
+        <div className='h-[35%] flex justify-center items-end '> <a href='#page9'><img src="/images/DownArrow.png" alt="Image" className="filter-invert  " />
             </a></div>
          </div>
     </div>

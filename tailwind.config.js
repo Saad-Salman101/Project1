@@ -5,10 +5,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        'custom-golden': '#BE9F56'
-      },
+      'custom-golden': '#BE9F56'
     },
   },
-  plugins: [],
+  variants: {},
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.filter-invert': {
+          filter: 'invert(100%)',
+        },
+      });
+    },
+  ],
 };
