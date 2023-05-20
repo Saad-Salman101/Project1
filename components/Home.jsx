@@ -17,7 +17,7 @@ import Footer2 from './Footer2'
 
 const Home = () => {
   return (
-    <>
+    <div className='overflow-x-hidden' >
     <Page1/>
     <Page2/>
     <Page3/>
@@ -33,7 +33,7 @@ const Home = () => {
     <Page13/>
     <Footer2/>
     
-    </>
+    </div>
   )
 }
 
