@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
+import { Element} from 'react-scroll';
 
 const Page13 = () => {
   return (
     <>
+    <Element name="page13" className="section">
     <div id='page13' className='h-screen w-full flex-col  '>
       <div className='w-full h-[30%]'></div>
       <div className='w-full h-[20%] flex justify-center '><img src='/images/P13Logo.png' alt='' /></div>
@@ -33,6 +35,7 @@ const Page13 = () => {
       </div>
 
     </div>
+    </Element>
     </>
   )
 }

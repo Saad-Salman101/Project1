@@ -5,7 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      'custom-golden': '#BE9F56'
+      colors: {
+        'customgolden': '#BE9F56', // Replace with your desired color value
+      },
+
     },
   },
   variants: {},
