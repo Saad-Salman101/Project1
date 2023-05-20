@@ -9,10 +9,10 @@ const Footer2 = () => {
 
   return (
     <>
-    <div className='w-full '>
+    <div className='w-full  overflow-x-hidden'>
         <div className='md:flex h-full w-full '>
 
-        <div className='flex flex-col md:w-[55%] w-full justify-between items-start'>
+        <div className='flex flex-col md:w-[60%] w-full justify-between items-start'>
             <div className='w-full flex justify-between '>
             <div className='ml-4'>
                         <div className='text-black uppercase text-size-[12px] font-Lato tracking[2px]'>
@@ -36,7 +36,7 @@ const Footer2 = () => {
                 
             </div>
 
-            <div className='w-full md:mt-0 mt-10'>
+            <div className='w-full md:mt-0 mt-10 md:mb-0 mb-4'>
                 <div className='text-black text-size-[12px] font-Lato tracking[2px] w-full md:mb-6 ml-4 '>ZIMO is a wholly owned subsidiary company of ZIMO GROUP LIMITED.
                                 The registered office is: 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, England, United Kingdom.</div>
             </div>
@@ -44,8 +44,8 @@ const Footer2 = () => {
 
         </div>
 
-        <div className='md:w-[45%] md:flex flex'>
-            <div className='md:flex md:flex-col justify-center items-center 00 md:w-[35%] flex w-[25%] md:ml-0 ml-10 '>
+       
+            <div className='md:flex md:flex-col justify-center items-center 00 md:w-[30%] flex w-[100%] md:ml-0 ml-10 '>
 
                         <div className='md:ml-0 ml-5' >
                         <div className='mb-2'>
@@ -180,7 +180,7 @@ const Footer2 = () => {
 
 
 
-                            <div className='md:ml-0 ml-1'>
+                            <div className='md:ml-0 ml-1 mt-4'>
                             <div className='text-black uppercase text-size-[12px] font-Lato tracking[2px] mb-4'>
                                     press
                                 </div>
@@ -251,7 +251,7 @@ const Footer2 = () => {
 
 
 
-                </div>
+                
 
                 <div className='flex flex-col md:justify-end justify-start md:items-start   md:w-[5%] w-[20%] md:mr-4 md:mb-4'>
                           <img src='/images/P14QR.png' alt='' />
