@@ -119,7 +119,7 @@ const Footer2 = () => {
 
 
             <div className='flex flex-col justify-center items-start  md:w-[40%]  w-[60%] md:ml-4'>
-                <div className='  '>
+                <div className=' ml-4 md:ml-0'>
                     <div className='mb-2'>
                             <div className='text-black uppercase text-[12px] font-Lato tracking[2px]'>
                                 PROPERTY PROFESSIONALS/AGENTS
@@ -180,7 +180,7 @@ const Footer2 = () => {
 
 
 
-                            <div className='md:ml-0  mt-4'>
+                            <div className='md:ml-0 ml-4  mt-4'>
                             <div className='text-black uppercase text-[12px] font-Lato tracking[2px] mb-4'>
                                     press
                                 </div>
