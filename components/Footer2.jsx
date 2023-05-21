@@ -22,9 +22,9 @@ const Footer2 = () => {
                           hello@zimogroup.org
                         </div>
             </div>
-            <div >
-                    <img src='/images/P14CONTACT.png' alt='' /> 
-            </div>
+            <div1>
+                    <img src='/images/P14CONTACT.png' alt=''  className=' mr-36'/> 
+            </div1>
 
             </div>
             

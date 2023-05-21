@@ -22,7 +22,7 @@ const Page1 = () => {
           <img src='/images/P1ZimoGroup.png' alt='' />
         </div>
         <div className='w-full h-[40%] flex justify-center  items-end '>
-              <img src='/images/P1BackLogo.png' alt='' className='absolute bottom-1/4 opacity-40' />
+              <img src='/images/P1BackLogo.png' alt='' className='absolute bottom-1/4 opacity-20' />
   
               <img src='/images/DownArrow.png' alt='' className='md:w-[80px] w-[40px]' onClick={() => scrollToSection('page2')}/>
     
