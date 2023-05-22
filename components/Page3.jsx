@@ -23,9 +23,9 @@ const Page3 = () => {
       </div>
       
       <div className='md:flex flex flex-col justify-center items-center w-[80%] md:h-[60%] h-[30%] relative '>
-  <div className=' absolute mb-16  top-20 right-1/4 md:top-1/2 md:left-3'><img src='/images/P3Logo.png' alt='' /></div>
+  <div className=' absolute mb-16  top-20 right-1/4 sm:top-1/2 sm:left-3'><img src='/images/P3Logo.png' alt='' /></div>
   <div className='absolute    right-1/6'><img src='/images/P3Line.png' alt='' className='transform rotate-90 md:rotate-0' /></div>
-  <div className='   absolute mb-3  right-1/4 bottom-20 md:bottom-1/3  md:right-2'><img src='/images/P3Logo2.png' alt='' /></div>
+  <div className='   absolute mb-3  right-1/4 bottom-20 sm:bottom-1/3  sm:right-2'><img src='/images/P3Logo2.png' alt='' /></div>
 </div>
         
         <div className='flex flex-col justify-center items-center h-[25%]'>

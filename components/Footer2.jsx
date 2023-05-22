@@ -212,9 +212,9 @@ const Footer2 = () => {
 
 
 
-                <div className='md:stactic relative flex md:flex-col md:justify-end md:items-end justify-around md:w-[10%] w-[100%] md:mr-4 md:mb-4 mb'>
+                <div className='md:stactic relative flex md:flex-col md:justify-end md:items-end justify-around md:w-[10%] w-[100%] md:mr-4 md:mb-4 mb-36'>
                     <div></div>
-                          <div><img src='/images/P14QR.png' alt='' className='md:static absolute bottom-4' /></div>
+                          <div><img src='/images/P14QR.png' alt='' className='md:static absolute bottom-[-70px] left-4' /></div>
                       </div>
 
 
