@@ -37,7 +37,7 @@ const Footer2 = () => {
             </div>
 
             <div className='w-full md:mt-0 mt-10 md:mb-0 mb-4'>
-                <div className='text-black text-[12px] font-Lato tracking-[2px] w-full md:mb-6 ml-4 '>ZIMO is a wholly owned subsidiary company of ZIMO GROUP LIMITED.<br/>
+                <div className='text-black text-[12px] font-Lato tracking-[2px] w-full md:mb-6 md:ml-4  md:mr-0 mr-2'>ZIMO is a wholly owned subsidiary company of ZIMO GROUP LIMITED.<br/>
                                 The registered office is: 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, <br/> England, United Kingdom.</div>
             </div>
 

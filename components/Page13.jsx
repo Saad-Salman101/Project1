@@ -19,7 +19,7 @@ const Page13 = () => {
           
           <div className='w-full flex justify-end items-center'>
             <div className='flex flex-col wd:mr-10 wd:mb-5'>
-              <div className='flex md:ml-0 ml-12'>
+              <div className='flex md:ml-0 ml-2'>
                 <img src='/images/P13SmallLogo.png' alt='' />
                 <img src='/images/P13Sign.png' alt='' className='ml-20'/>
               </div>

@@ -30,7 +30,7 @@ const Page3 = () => {
         </div>
         
         <div className='flex flex-col justify-center items-center h-[25%]'>
-        <div  className='text-black tracking-[2px] text-[30px] font-lato mb-10 md:mr-0 mr-4 md:ml-0 ml-4'>
+        <div  className='text-black tracking-[2px] text-[30px] font-lato md:mb-10 md:mr-0 mr-4 md:ml-0 ml-4'>
           The only platform of it`s kind in the world</div>
 
             <a>

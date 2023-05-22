@@ -21,7 +21,7 @@ const Page6 = () => {
           className="h-screen flex justify-between "
         >
           <div className="md:w-1/3"></div>
-          <div className="md:w-2/5 text-white text-4xl font-lato tracking-2px uppercase flex flex-col items-center justify-between">
+          <div className="md:w-2/5 md:ml-0 ml-36 text-white text-4xl font-lato tracking-2px uppercase flex flex-col items-center justify-between">
             <div></div>
             Cars
             <div>
@@ -33,7 +33,7 @@ const Page6 = () => {
               />
             </div>
           </div>
-          <div className="w-1/2 md:w-1/3 flex flex-col justify-end">
+          <div className="w-1/3 flex flex-col justify-end">
             <div className="mr-3">
               <img src="/images/P6Image.png" alt="" className="mr-4 mb-3" />
             </div>
