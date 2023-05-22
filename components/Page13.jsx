@@ -8,7 +8,7 @@ const Page13 = () => {
     <Element name="page13" className="section">
     <div id='page13' className='h-screen w-full flex-col  '>
       <div className='w-full h-[30%]'></div>
-      <div className='w-full h-[20%] flex justify-center '><img src='/images/P13Logo.png' alt='' /></div>
+      <div className=' h-[20%] flex justify-center md:w-[70%] w-[50%] ml-20'><img src='/images/P13Logo.png' alt='' /></div>
       <div className='w-full h-[50%] flex flex-col justify-between items-center '>
         <div></div>
         <div className='text-[#737373] text-[30px] font-lato tracking-[2px] text-center'>

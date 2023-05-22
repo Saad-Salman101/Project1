@@ -75,13 +75,39 @@ const Footer2 = () => {
         },
       ];
 
+      const contactItems3 = [
+        {
+          name: 'UNITED KINGDOM',
+          email: 'press-uk@zimogroup.org',
+        },
+        {
+          name: 'EUROPE',
+          email: 'press-eu@zimogroup.org',
+        },
+        {
+          name: '  NORTH AMERICA',
+          email: 'press-na@zimogroup.org',
+        },
+        {
+          name: ' MIDDLE EAST',
+          email: 'press-me@zimogroup.org',
+        },
+        {
+          name: 'ASIA/AUSTRALIA',
+          email: 'press-apac@zimogroup.org',
+        },
+        {
+          name: 'CHINA/HONG KONG',
+          email: 'press-ch@zimogroup.org',
+        },
+      ];
 
   return (
     <>
-    <div className='w-full  '>
+    <div className='w-full md:static relative '>
         <div className='md:flex h-full w-full '>
 
-        <div className='flex flex-col md:w-[70%] w-full justify-between items-start mt-10'>
+        <div className='flex flex-col md:w-[70%] w-full justify-between items-start md:mt-10 mt-28'>
             <div className='w-full flex justify-between '>
             <div className='ml-4'>
                         <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
@@ -92,14 +118,14 @@ const Footer2 = () => {
                         </div>
             </div>
             <div1>
-                    <img src='/images/P14CONTACT.png' alt=''  className=' mr-36'/> 
+                    <img src='/images/P14CONTACT.png' alt=''  className=' mr-36 md:static absolute top-[-80px] right-0'/> 
             </div1>
 
             </div>
             
             <div className='flex flex-col'>
-                <div className='w-[80%]'>
-                <img src='/images/P14ZimoLogo.png' alt='' className='  mt-10 md:ml-4' /> 
+                <div className='md:w-[80%] w-full'>
+                <img src='/images/P14ZimoLogo.png' alt='' className='  md:mt-10 mt-16 md:ml-4' /> 
                 <img src='/images/P14Des.png' alt=''  className='  mt-10 md:mb-0 mb-10 ml-4'/>  
                 </div>
                 
@@ -119,7 +145,7 @@ const Footer2 = () => {
                         <div className='md:ml-0 ml-5' >
                                 
                                                         {contactItems.map((item) => (
-                                <div className='mb-2' key={item.name}>
+                                <div className='mb-4' key={item.name}>
                                     <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
                                     {item.name}
                                     </div>
@@ -144,7 +170,7 @@ const Footer2 = () => {
                 <div className=' ml-4 md:ml-0'>
                                     
                 {contactItems2.map((item) => (
-                                <div className='mb-2' key={item.name}>
+                                <div className='mb-4' key={item.name}>
                                     <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
                                     {item.name}
                                     </div>
@@ -166,62 +192,19 @@ const Footer2 = () => {
                                     press
                                 </div>
                                 
-                                <div className='mb-2'>
-                                <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                                    UNITED KINGDOM
+                                {contactItems3.map((item) => (
+                                <div className='mb-4' key={item.name}>
+                                    <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
+                                    {item.name}
+                                    </div>
+                                    <div
+                                    onClick={() => handleClick(item.email)}
+                                    className='text-black text-[12px] font-Lato tracking-[1px] cursor-pointer hover:text-customgolden'
+                                    >
+                                    {item.email}
+                                    </div>
                                 </div>
-                                <div onClick={() => handleClick('press-uk@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                                    press-uk@zimogroup.org
-                                </div>
-                                </div>
-                                <div className='mb-2'>
-                                <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                                    EUROPE
-                                </div>
-                                <div onClick={() => handleClick('press-eu@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                                    press-eu@zimogroup.org
-                                </div>
-                                </div>
-                                <div className='mb-2'>
-                                <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                                    NORTH AMERICA
-                                </div>
-                                <div onClick={() => handleClick('press-na@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                                    press-na@zimogroup.org
-                                </div>
-                                </div>
-                                <div className='mb-2'>
-                                <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                                    MIDDLE EAST
-                                </div>
-                                <div onClick={() => handleClick('press-me@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                                    press-me@zimogroup.org
-                                </div>
-                                </div>
-                                <div className='mb-2'>
-                                <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                                    ASIA/AUSTRALIA
-                                </div>
-                                <div onClick={() => handleClick('press-apac@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                                    press-apac@zimogroup.org
-                                </div>
-                                </div>
-                                <div className='mb-2'>
-                                <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                                    AFRICA
-                                </div>
-                                <div onClick={() => handleClick('press-af@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                                    press-af@zimogroup.org
-                                </div>
-                                </div>
-                                <div className='mb-2'>
-                                <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                                    CHINA/HONG KONG
-                                </div>
-                                <div onClick={() => handleClick('press-ch@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                                    press-ch@zimogroup.org
-                                </div>
-                                </div>
+                                ))}
                     </div>
 
 
