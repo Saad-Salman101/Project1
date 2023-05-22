@@ -7,6 +7,75 @@ const Footer2 = () => {
         window.location.href = `mailto:${email}`;
       };
 
+
+      const contactItems = [
+        {
+          name: 'REAL ESTATE',
+          email: 'realestate@zimogroup.org',
+        },
+        {
+          name: 'CARS',
+          email: 'cars@zimogroup.org',
+        },
+        {
+          name: 'YACHTS',
+          email: 'yachts@zimogroup.org',
+        },
+        {
+          name: 'WATCHES',
+          email: 'watches@zimogroup.org',
+        },
+        {
+          name: 'JETS',
+          email: 'jets@zimogroup.org',
+        },
+        {
+          name: 'PRIVATE ISLANDS',
+          email: 'privateislands@zimogroup.org',
+        },
+        {
+          name: 'DIAMONDS',
+          email: 'diamonds@zimogroup.org',
+        },
+        {
+          name: 'TRAVEL THE WORLD',
+          email: 'ttw@zimogroup.org',
+        },
+      ];
+
+
+      const contactItems2 = [
+        {
+          name: 'PROPERTY PROFESSIONALS/ <br/>AGENTS',
+          email: 'agent@zimogroup.org',
+        },
+        {
+          name: 'ADVERTISING',
+          email: 'advertising@zimogroup.org',
+        },
+        {
+          name: ' SPONSORSHIP',
+          email: 'sponsor@zimogroup.org',
+        },
+        {
+          name: ' PARTNERS',
+          email: 'partners@zimogroup.org',
+        },
+        {
+          name: 'LEGAL',
+          email: 'legal@zimogroup.org',
+        },
+        {
+          name: 'CORPORATE',
+          email: 'corporate@zimogroup.org',
+        },
+        {
+          name: ' MARKETING',
+          email: 'marketing@zimogroup.org',
+        },
+      ];
+
+
   return (
     <>
     <div className='w-full  '>
@@ -48,70 +117,23 @@ const Footer2 = () => {
             <div className='md:flex md:flex-col md:justify-center md:items-end   md:w-[10%] flex w-[100%]  '>
 
                         <div className='md:ml-0 ml-5' >
-                        <div className='mb-2'>
-                            <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                            REAL ESTATE
-                            </div>
-                            <div onClick={() => handleClick('realestate@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                            realestate@zimogroup.org
-                            </div>
-                        </div>
-                        <div className='mb-2'>
-                            <div className='text-black uppercase text-[12px] font-Lato tracking-[2px] '>
-                            cars
-                            </div>
-                            <div onClick={() => handleClick('cars@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                            cars@zimogroup.org
-                            </div>
-                        </div>
-                        <div className='mb-2'>
-                            <div className='text-black uppercase text-[12px] font-Lato tracking-[2px] '>
-                            yachts
-                            </div>
-                            <div onClick={() => handleClick('yachts@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                            yachts@zimogroup.org
-                            </div>
-                        </div>
-                        <div className='mb-2'>
-                            <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                            watches
-                            </div>
-                            <div onClick={() => handleClick('watches@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                            watches@zimogroup.org
-                            </div>
-                        </div>
-                        <div className='mb-2'>
-                            <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                            jets
-                            </div>
-                            <div onClick={() => handleClick('jets@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                            jets@zimogroup.org
-                            </div>
-                        </div>
-                        <div className='mb-2'>
-                            <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                            private islands
-                            </div>
-                            <div onClick={() => handleClick('privateislands@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                            privateislands@zimogroup.org
-                            </div>
-                        </div>
-                        <div className='mb-2'>
-                            <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                            diamonds
-                            </div>
-                            <div onClick={() => handleClick('diamonds@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                            diamonds@zimogroup.org
-                            </div>
-                        </div>
-                        <div className='mb-2'>
-                            <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                            travel the world
-                            </div>
-                            <div onClick={() => handleClick('ttw@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                            ttw@zimogroup.org
-                            </div>
-                        </div>
+                                
+                                                        {contactItems.map((item) => (
+                                <div className='mb-2' key={item.name}>
+                                    <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
+                                    {item.name}
+                                    </div>
+                                    <div
+                                    onClick={() => handleClick(item.email)}
+                                    className='text-black text-[12px] font-Lato tracking-[1px] cursor-pointer hover:text-customgolden'
+                                    >
+                                    {item.email}
+                                    </div>
+                                </div>
+                                ))}
+
+
+
                         </div>
 
             </div>
@@ -120,62 +142,21 @@ const Footer2 = () => {
 
             <div className='flex flex-col justify-center items-start  md:w-[20%]  w-[60%] md:ml-4 mt-8'>
                 <div className=' ml-4 md:ml-0'>
-                    <div className='mb-2'>
-                            <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                                PROPERTY PROFESSIONALS/ <br/>AGENTS
-                            </div>
-                            <div onClick={() => handleClick('agent@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                                agent@zimogroup.org
-                            </div>
-                            </div>
-                            <div className='mb-2'>
-                            <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                                ADVERTISING
-                            </div>
-                            <div onClick={() => handleClick('advertising@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                                advertising@zimogroup.org
-                            </div>
-                            </div>
-                            <div className='mb-2'>
-                            <div className='text-black uppercase text-[12px] font-Lato tracking-[2px] '>
-                                SPONSORSHIP
-                            </div>
-                            <div onClick={() => handleClick('sponsor@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                                sponsor@zimogroup.org
-                            </div>
-                            </div>
-                            <div className='mb-2'>
-                            <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                                PARTNERS
-                            </div>
-                            <div onClick={() => handleClick('partners@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                                partners@zimogroup.org
-                            </div>
-                            </div>
-                            <div className='mb-2'>
-                            <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                                LEGAL
-                            </div>
-                            <div onClick={() => handleClick('legal@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                                legal@zimogroup.org
-                            </div>
-                            </div>
-                            <div className='mb-2'>
-                            <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                                CORPORATE
-                            </div>
-                            <div onClick={() => handleClick('corporate@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                                corporate@zimogroup.org
-                            </div>
-                            </div>
-                            <div className='mb-2'>
-                            <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
-                                MARKETING
-                            </div>
-                            <div onClick={() => handleClick('marketing@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
-                                marketing@zimogroup.org
-                            </div>
-                            </div>
+                                    
+                {contactItems2.map((item) => (
+                                <div className='mb-2' key={item.name}>
+                                    <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
+                                    {item.name}
+                                    </div>
+                                    <div
+                                    onClick={() => handleClick(item.email)}
+                                    className='text-black text-[12px] font-Lato tracking-[1px] cursor-pointer hover:text-customgolden'
+                                    >
+                                    {item.email}
+                                    </div>
+                                </div>
+                                ))}
+
                             </div>
 
 
