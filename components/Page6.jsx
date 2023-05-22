@@ -18,24 +18,26 @@ const Page6 = () => {
       <Element name="page6" className="section">
         <div
           id="page6"
-          className="h-screen flex justify-between "
+          className="h-screen flex flex-col justify-between "
         >
-          <div className="md:w-1/3"></div>
-          <div className="md:w-2/5 md:ml-0 ml-36 text-white text-4xl font-lato tracking-2px uppercase flex flex-col items-center justify-between">
-            <div></div>
-            Cars
-            <div>
+          <div className="md:h-1/4 bg-slate-400"></div>
+          <div className="md:h-2/4 md:ml-0  text-white text-center text-4xl font-lato tracking-2px uppercase flex flex-col items-center justify-between">
+            <div>Cars</div>
+            
+
+          </div>
+          <div className="h-1/3 w-full flex items-end justify-between">
+            <div className='w-[40%]'></div>
+          <div>
               <img
                 src="/images/DownArrow.png"
                 alt="Image"
-                className="filter-invert md:w-24 w-12 cursor-pointer"
+                className="filter-invert md:w-24 w-12 cursor-pointer ml-20"
                 onClick={() => scrollToSection('page7')}
               />
             </div>
-          </div>
-          <div className="w-1/3 flex flex-col justify-end">
             <div className="mr-3">
-              <img src="/images/P6Image.png" alt="" className="mr-4 mb-3" />
+              <img src="/images/P6Image.png" alt="" className="mr-4 mb-3 md:w-[70%] w-full" />
             </div>
           </div>
         </div>
