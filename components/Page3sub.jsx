@@ -2,7 +2,7 @@
 import React from 'react'
 import { Element, scroller } from 'react-scroll';
 
-const Page3 = () => {
+const Page3sub = () => {
 
   const scrollToSection = (section) => {
     scroller.scrollTo(section, {
@@ -28,7 +28,7 @@ const Page3 = () => {
   <div className=' mt-[-400px] md:mt-0 ml-3   '><img src='/images/P3Logo2.png' alt='' /></div>
 </div>
         
-        <div className='flex flex-col justify-between items-center mt-5 h-[23%]'>
+        <div className='flex flex-col justify-center items-center mt-5 h-[23%]'>
         <div  className='text-black text-center tracking-[2px] text-[30px] font-lato '>
           The only platform of it`s kind in the world.</div>
 
@@ -44,4 +44,4 @@ const Page3 = () => {
   )
 }
 
-export default Page3
+export default Page3sub
