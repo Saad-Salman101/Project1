@@ -117,19 +117,19 @@ const Footer2 = () => {
                           hello@zimogroup.org
                         </div>
             </div>
-            <div1>
-                    <img src='/images/P14CONTACT.png' alt=''  className=' mr-36 md:static absolute top-[-80px] right-0'/> 
-            </div1>
+            <div>
+                    <img src='/images/P14CONTACT.png' alt=''  className=' mr-36 md:static absolute top-[-80px] right-0 '/> 
+            </div>
 
             </div>
             
             <div className='flex flex-col'>
                 <div className='md:w-[80%] w-full flex flex-col justify-center items-center'>
-                <img src='/images/P14ZimoLogo.png' alt='' className='  md:mt-10 mt-16 md:ml-4' /> 
+                <div className='ml-4 mr-4'><img src='/images/P14ZimoLogo.png' alt='' className='  md:mt-10 mt-16 ' /> </div>
                 <img src='/images/P14SmallLogo.png' alt=''  className='  mt-10 md:mb-0 mb-1 ml-4 w-[20%]'/> 
-                <div className='text-[12px] font-Lato text-center gap-1 tracking-widest' >ZIMO{' '} GROUP{' '} LIMITED <br/>
-                            71-75{' '} SHELTON{' '} STREET{' '} COVENT{' '} GARDEN{' '} LONDON{' '} <br/> WC2H{' '} 9JQ{' '}
-                            ENGLAND {' '} UNITED KINGDOM<br/>
+                <div className='text-[10px] font-Lato text-center gap-1 tracking-widest leading-5' >ZIMO{' '} GROUP{' '} LIMITED <br/>
+                            71-75{' '} SHELTON{' '} STREET{' '} COVENT{' '} GARDEN{' '} LONDON{' '}  WC2H{' '} 9JQ{' '}
+                            ENGLAND {' '} <br/>UNITED KINGDOM<br/>
                             • ZIMOGROUP.ORG
                             HELLO@ZIMOGROUP.ORG <br/>
                             REGISTERED IN ENGLAND
