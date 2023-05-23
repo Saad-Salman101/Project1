@@ -1,7 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Footer2 = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Animation easing
+      once: false, // Whether to trigger animations only once
+    });
+  }, []);
 
     const handleClick = (email) => {
         window.location.href = `mailto:${email}`;
@@ -110,14 +121,14 @@ const Footer2 = () => {
         <div className='flex flex-col md:w-[70%] w-full justify-between items-start md:mt-10 mt-28'>
             <div className='w-full flex justify-between '>
             <div className='ml-4'>
-                        <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]'>
+                        <div className='text-black uppercase text-[12px] font-Lato tracking-[2px]' data-aos="fade-right">
                           enquiries
                         </div>
-                        <div onClick={() => handleClick('realestate@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden'>
+                        <div onClick={() => handleClick('realestate@zimogroup.org')} className='text-black text-[12px] font-Lato tracking-[2px] cursor-pointer hover:text-customgolden' data-aos="fade-right">
                           hello@zimogroup.org
                         </div>
             </div>
-            <div>
+            <div data-aos="fade-down">
                     <img src='/images/P14CONTACT.png' alt=''  className=' mr-36 md:static absolute top-[-80px] right-0 '/> 
             </div>
 
@@ -125,9 +136,9 @@ const Footer2 = () => {
             
             <div className='flex flex-col'>
                 <div className='md:w-[80%] w-full flex flex-col justify-center items-center'>
-                <div className='ml-4 mr-4'><img src='/images/P14ZimoLogo.png' alt='' className='  md:mt-10 mt-16 ' /> </div>
-                <img src='/images/P14SmallLogo.png' alt=''  className='  mt-10 md:mb-0 mb-1 ml-4 w-[20%]'/> 
-                <div className='text-[10px] font-Lato text-center gap-1 tracking-widest leading-5' >ZIMO{' '} GROUP{' '} LIMITED <br/>
+                <div className='ml-4 mr-4' data-aos="fade-up"><img src='/images/P14ZimoLogo.png' alt='' className='  md:mt-10 mt-16 ' /> </div>
+                <img src='/images/P14SmallLogo.png' alt=''  className='  mt-10 md:mb-0 mb-1 ml-4 w-[20%]' data-aos="fade-up"/> 
+                <div className='text-[10px] font-Lato text-center gap-1 tracking-widest leading-5' data-aos="fade-up" >ZIMO{' '} GROUP{' '} LIMITED <br/>
                             71-75{' '} SHELTON{' '} STREET{' '} COVENT{' '} GARDEN{' '} LONDON{' '}  WC2H{' '} 9JQ{' '}
                             ENGLAND {' '} <br/>UNITED KINGDOM<br/>
                             • ZIMOGROUP.ORG
@@ -148,7 +159,7 @@ const Footer2 = () => {
         </div>
 
        
-            <div className='md:flex md:flex-col md:justify-center md:items-end   md:w-[10%] flex w-[100%]  '>
+            <div className='md:flex md:flex-col md:justify-center md:items-end   md:w-[10%] flex w-[100%]  ' data-aos="fade-left">
 
                         <div className='md:ml-0 ml-5' >
                                 
@@ -174,7 +185,7 @@ const Footer2 = () => {
 
 
 
-            <div className='flex flex-col justify-center items-start  md:w-[20%]  w-[60%] md:ml-4 mt-8'>
+            <div className='flex flex-col justify-center items-start  md:w-[20%]  w-[60%] md:ml-4 mt-8' data-aos="fade-left">
                 <div className=' ml-4 md:ml-0'>
                                     
                 {contactItems2.map((item) => (
@@ -196,7 +207,7 @@ const Footer2 = () => {
 
 
                             <div className='md:ml-0 ml-4  mt-4'>
-                            <div className='text-black uppercase text-[12px] font-Lato tracking-[2px] mb-4'>
+                            <div className='text-black uppercase text-[12px] font-Lato tracking-[2px] mb-4' data-aos="fade-left">
                                     press
                                 </div>
                                 
@@ -222,7 +233,7 @@ const Footer2 = () => {
 
                 <div className='md:stactic relative flex md:flex-col md:justify-end md:items-end justify-around md:w-[10%] w-[100%] md:mr-4 md:mb-4 mb-36'>
                     <div></div>
-                          <div><img src='/images/P14QR.png' alt='' className='md:static absolute bottom-[-70px] left-4' /></div>
+                          <div ><img src='/images/P14QR.png' alt='' className='md:static absolute bottom-[-70px] left-4'  /></div>
                       </div>
 
 

@@ -1,8 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Element, scroller} from 'react-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Page2 = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Animation easing
+      once: false, // Whether to trigger animations only once
+    });
+  }, []);
 
   const scrollToSection = (section) => {
     scroller.scrollTo(section, {
@@ -22,8 +33,8 @@ const Page2 = () => {
 
           <div className='h-[40%] w-full  flex flex-col md:flex-row md:justify-around md:items-center justify-center items-center'>
 
-            <div className=' md:mb-0 mb-10'><img src='/images/P2Logo.png' alt='' className=''  /></div>
-            <div  className=' font-Lato text-[30px] text-white text-center'>We are the global platform. <br/> Services in over on hundred and twenty countries. </div>
+            <div className=' md:mb-0 mb-10' data-aos="fade-right"><img src='/images/P2Logo.png' alt='' className=''  /></div>
+            <div  className=' font-Lato text-[30px] text-white text-center ' data-aos="slide-up">We are the global platform. <br/> Services in over on hundred and twenty countries. </div>
             <div></div>
 
           </div>

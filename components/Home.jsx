@@ -14,10 +14,23 @@ import Page13 from './Page13'
 import Page12 from './Page12'
 // import Footer from './Footer'
 import Footer2 from './Footer2'
+import { motion, useScroll, useSpring } from "framer-motion";
+
+
 
 const Home = () => {
+
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   return (
-    <div className='overflow-x-hidden' >
+    <div className='overflow-x-hidden '  style={{ overflowY: 'hidden !important' }}>
+
+      <motion.div className="progress-bar" style={{ scaleX }} />
     <Page1/>
     <Page2/>
     <Page3/>
