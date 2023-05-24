@@ -17,14 +17,14 @@ const Page13 = () => {
   return (
     <>
     <Element name="page13" className="section">
-    <div id='page13' className='h-screen w-full flex-col flex justify-between '>
+    <div id='page13' className='h-[100vh] w-full flex-col flex justify-between '>
       <div className='w-full h-[30%] '></div>
 
       <div className=' h-[20%]  flex flex-row justify-center items-center md:w-full  '>
         <div className='w-[50%]  flex justify-center items-center' data-aos="fade-down"><img src='/images/P13Logo.png' alt='' /> </div>
         </div>
 
-      <div className='w-full h-[50%] flex flex-col  items-center justify-end '>
+      <div className='w-full h-[50%] flex flex-col  items-center justify-end   mb-5'>
         <div></div>
         <div className='text-[black] text-[20px] md:text-[30px] font-lato tracking-[2px] text-center mb-3' data-aos="fade-up">
           Document-signing technology that lets you sign documents online.

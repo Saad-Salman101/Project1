@@ -33,7 +33,7 @@ const Page6 = () => {
           className="h-screen flex flex-col justify-between "
         >
           <div className="md:h-1/4"></div>
-          <div className="md:h-2/4 md:ml-0  text-white text-center text-4xl font-lato tracking-2px uppercase flex flex-col items-center justify-between">
+          <div className=" md:h-2/4 md:ml-0  text-white text-center text-4xl font-lato tracking-2px uppercase flex flex-col items-center justify-center">
             <div data-aos="fade-right">Cars</div>
             
 
@@ -49,8 +49,8 @@ const Page6 = () => {
                 
               />
             </div>
-            <div className="" data-aos="fade-up">
-              <img src="/images/P6Image.png" alt="" className="md:ml-3 mb-3 md:w-[70%] w-full opacity-50 " />
+            <div className=" " data-aos="fade-up">
+              <img src="/images/P6Image.png" alt="" className="md:ml-32 mb-3 md:w-[70%] w-full opacity-50 " />
             </div>
           </div>
         </div>
